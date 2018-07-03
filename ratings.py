@@ -26,9 +26,9 @@ def add_ratings_scores(rest_dict):
 
 	new_restaurant = input("What restaurant did you visit? ")
 	new_score = input("What score from 1 to 5 would you give it? ")
-	new_score = int(new_score)
+	# new_score = int(new_score)
 	if new_restaurant in rest_dict: 
-		rest_dict[new_restaurant] += new_score
+		rest_dict[new_restaurant] = new_score
 
 	else: 
 		rest_dict[new_restaurant] = new_score
